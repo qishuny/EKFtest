@@ -1,10 +1,6 @@
 #include <iostream>
 #include "EKFEstimator.h"
 
-#define PI 3.14159265
-
-using namespace std;
-
 const int numofStates = 18;
 
 EKFEstimator::EKFEstimator() {}
@@ -150,6 +146,8 @@ void EKFEstimator::updateStep()
 
   // Update state
   x = xPrior + (K * y);
+  std::cout<< x << std::endl;
+
   // Update covariance matrix
   Eigen::MatrixXd I = Eigen::MatrixXd::Identity(numofStates, numofStates);
   P = (I - K * H) * P;

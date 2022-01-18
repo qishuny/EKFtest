@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/qishuny/CMU/EKFtest/src/EKFEstimator.cpp
+iostream
+-
+EKFEstimator.h
+/home/qishuny/CMU/EKFtest/src/EKFEstimator.h
+
+/home/qishuny/CMU/EKFtest/src/EKFEstimator.h
+eigen3/Eigen/Eigen
+-
+vector
+-
+string
+-
+fstream
+-
+
+/home/qishuny/CMU/EKFtest/src/main.cpp
+iostream
+-
+EKFEstimator.h
+/home/qishuny/CMU/EKFtest/src/EKFEstimator.h
+EKFEstimator.cpp
+/home/qishuny/CMU/EKFtest/src/EKFEstimator.cpp
+
